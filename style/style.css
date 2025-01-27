@@ -116,6 +116,68 @@ nav img{
     height: 100%;
 }
 
+/* standard curriculum style */
+.standard{
+    background-image: ;
+}
+.standard-head{
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.standard-boxs{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 28px ;
+
+}
+.standard-box{
+   border: 1px solid #01ACFD;
+   text-align: center;
+   max-width: 367px ;
+   margin-top: 80px ;
+   padding: 50px 40px ;
+   border-radius: 18px;
+   /* background: linear-gradient(45deg,#DEF5FF,white);
+   transform: translateY(100px); */
+}
+.standard-img{
+    /* height: 100%;
+    width: 100%;    */
+}
+.standard-heading{
+    font-size: 24px ;
+    font-weight: bold;
+}
+.standard-paragrap{
+    font-size: 15px ;
+    font-weight: 500;
+    color: #808080;
+}
+.standard-btn-1{
+    font-size: 15px ;
+    font-weight: bold;
+    color: #64C8FF;
+    border: none;
+    background-color: white;
+}
+.standard-btn-2{
+    font-size: 15px ;
+    font-weight: bold;
+    color: #F0AA00;
+    border: none;
+    background-color: white;
+}
+.standard-btn-3{
+    font-size: 15px ;
+    font-weight: bold;
+    color: #8700FF;
+    border: none;
+    background-color:white;
+    margin-top: 28px ;
+}
+    
 /* responsive for mobile device */
 @media screen and (max-width : 576px ) {
  .enroll-section{
@@ -129,7 +191,7 @@ nav img{
     padding: 0px ;
     text-align: center;
     
-    
+ }
  
  .enroll-heading{
     font-size: 2rem;
@@ -139,6 +201,7 @@ nav img{
  }
  
 }
+
 
 
  
