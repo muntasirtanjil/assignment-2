@@ -3,7 +3,7 @@
 .quicksand-fonts {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
@@ -36,6 +36,7 @@ nav li a{
    margin-right: 32px ;
 
 }
+
 nav img{
     /* max-width: 62px ;
     max-height: 62px ; */
@@ -118,7 +119,7 @@ nav img{
 
 /* standard curriculum style */
 .standard{
-    background-image: ;
+    background-image:url(../assets/bg.png) ;
 }
 .standard-head{
     text-align: center;
@@ -133,14 +134,26 @@ nav img{
 
 }
 .standard-box{
-   border: 1px solid #01ACFD;
+  
    text-align: center;
    max-width: 367px ;
    margin-top: 80px ;
    padding: 50px 40px ;
    border-radius: 18px;
-   /* background: linear-gradient(45deg,#DEF5FF,white);
-   transform: translateY(100px); */
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+   
+  
+}
+.box-1{
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    box-shadow: inset 0px 0px 10px rgba(222, 245, 255, 1);
+}.box-2{
+    background: linear-gradient(to bottom, #FFF4DC, #ffffff);
+    box-shadow: inset 0px 0px 10px rgba(255, 244, 220, 1);
+}
+.box-3{
+    background: linear-gradient(to bottom, #F2E8FF, #ffffff);
+    box-shadow: inset 0px 0px 10px rgba(242, 232, 255, 1);
 }
 .standard-img{
     /* height: 100%;
@@ -177,16 +190,154 @@ nav img{
     background-color:white;
     margin-top: 28px ;
 }
+.icon{
+    margin: 80px auto;
+    padding-left: 550px;
+    
+}
+.fa-less-than{
+    background-color: #F0AA00;
+    align-items: center;
+    font-size: 24px ;
+    padding: 17px 22px ;
+    border-radius: 50%;
+    color: white;
+    
+}
+.fa-greater-than{
+    background-color: #F0AA00;
+    align-items: center;
+    font-size: 24px ;
+    padding: 17px 22px ;
+    border-radius: 50%;
+    color: white;
+   
+   
+}
+/* story section */
+.bg{
+   
+    background: linear-gradient(to top, #f9d69a, #ffffff);  
+    /* background-image: url(../assets/bg.png);   */
+}
+
+.story{
+    display: flex;
+    gap: 19px ;
+    
+}
+.story-head{
+    font-size: 46px ;
+    font-weight: bold ;
+    text-align: center;
+    margin: 80px;
+}
+.card{
+    max-width: 540px  ;
+    max-height: 630px ;
+    border-radius: 16px;
+    background-color: white;
+    border-radius: 16px  ;
+    position: relative;
+    
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px 16px 0 0 ;
+    
+}
+.card-btn{
+    font-size: 15px ;
+    color: white;
+    font-weight: 500;
+    border-radius: 47px ;
+    border: none;
+    background-color: #3CD8E8;
+    padding: 15px 19px ;
+    
+    position: absolute;
+    bottom: 265px;
+    left: 43px;
+}
+.card-heading{
+    max-width: 402px ;
+    padding: 33px 38px 0px 38px;
+    font-size: 24px ;
+    font-weight: bold;
+    margin-bottom: 0px ;
+    padding-bottom: 0px ;
+    
+}
+.card-paragrap{
+    padding: 37px 68px 34px 38px ;
+    font-weight: 500;
+    font-size: 15px ;
+
+}
+.story-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 19px;
+    padding-top: 7px ;
+    max-width: 540px  ;
+    max-height: 630px ;
+   
+}
+.cards{
+    max-width: 290px ;
+    max-height: 301px;
+    position: relative;
+    background-color: white;
+    border-radius: 16px ;
+
+   
+}
+.cards-img{
+    width: 100%;
+    border-radius: 16px 16px 0 0 ;
+}
+
+.cards-btn{
+    font-size: 15px ;
+    color: white;
+    font-weight: 500;
+    border-radius: 47px ;
+    border: none;
+    background-color: #95B226;
+    padding: 10px 19px ;
+    
+    position: absolute;
+    bottom: 120px;
+    left: 33px;
+    
+}
+.cards-heading{
+    font-size: 15px ;
+    font-weight: 800;
+    line-height: 28px;
+    max-width: 198px ;
+    padding: 10px 38px 28px 37px ;
+}
+.view{
+    margin-top: 80px ;
+    padding-left: 521px ;
+}
     
 /* responsive for mobile device */
 @media screen and (max-width : 576px ) {
- .enroll-section{
-  flex-direction: column-reverse;
+  .navigat, #school ,#contact{
+    display: none;
+ 
+ 
+  }
+.enroll-section{
+   flex-direction: column-reverse;
     gap: 5px ;
-  max-height: none;
+   max-height: none;
   
 
  }
+
  .enroll-box{
     padding: 0px ;
     text-align: center;
@@ -199,8 +350,49 @@ nav img{
  .enroll-paragrap{
     font-size: 0.9rem;
  }
+
  
+ .standard-boxs{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px ;
+ }
+ .standard-box{
+    margin-top: 10px ;
+ }
+ .standard-head{
+    font-size: 25px ;
+ }
+ .icon{
+    display: none;
+ }
+ .card{
+    display: none;
+ }
+ .story-head{
+    font-size: 26px ;
+    margin: 20px;
+ }
+ .cards-heading{
+    font-size: 10px ;
+    line-height: 15px;
+    padding: 0px 2px 0px 2px ;
+ }
+ .story-cards{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: none;
+    max-height: none;
+    gap: 10px ;
+    
+ }
+ .cards-btn{
+    padding:5px  ;
+ }
+ .view{
+   margin: 20px auto;
+   padding-left: 100px ;
+ }
 }
+
 
 
 
