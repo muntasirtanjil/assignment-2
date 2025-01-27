@@ -21,6 +21,13 @@
     color: white;
     border-radius: 12px ;
     font-size: 20px;
+    border: none;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: #FFF4DC;
+    color: #242923;
 }
 /* nav section style */
 nav{
@@ -75,6 +82,9 @@ nav img{
     background-color: #FEA301;
     padding: 10px 60px ;
     border-radius: 12px ;
+}
+.fa-bars{
+    display: none;
 }
 
 /* enroll-section */
@@ -254,7 +264,7 @@ nav img{
     border: none;
     background-color: #3CD8E8;
     padding: 15px 19px ;
-    
+    transition: 1s;
     position: absolute;
     bottom: 265px;
     left: 43px;
@@ -305,7 +315,7 @@ nav img{
     border: none;
     background-color: #95B226;
     padding: 10px 19px ;
-    
+    transition: 1s;
     position: absolute;
     bottom: 120px;
     left: 33px;
@@ -337,9 +347,9 @@ nav img{
     max-width: 300px ;
     max-height: 81px ;
 }
-.footer-logo{
+/* .footer-logo{
    width: ;
-}
+} */
 
 .footer-logo-titel{
     font-size: 42px ;
@@ -379,6 +389,11 @@ nav img{
     border-bottom: 1px solid orange;
    padding-bottom: 10px ;
   }
+
+  .fa-bars{
+    display: block;
+    font-size: 30px ;
+  }
 .enroll-section{
    flex-direction: column-reverse;
     gap: 5px ;
@@ -399,7 +414,10 @@ nav img{
  .enroll-paragrap{
     font-size: 0.9rem;
  }
-
+.hero-img{
+    width: calc(100% - 20px);
+    padding: 0px 10px ;
+}
  
  .standard-boxs{
     grid-template-columns: repeat(1, 1fr);
