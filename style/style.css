@@ -321,14 +321,63 @@ nav img{
 .view{
     margin-top: 80px ;
     padding-left: 521px ;
+    padding-bottom: 60px ;
 }
+/* footer section */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    /* align-items: center; */
+    padding: 117px 0px 169px 0px ;  
+    color: white;
+}
+
+.footer-box{
+    max-width: 300px ;
+    max-height: 81px ;
+}
+.footer-logo{
+   width: ;
+}
+
+.footer-logo-titel{
+    font-size: 42px ;
+    font-weight: bold;
+    
+}
+.footer-paragrap{
+    font-size: 20px ;
+    max-width: 400px ;
+}
+.footer-ancor{
+    text-align: left;
+}
+.footer-ancor ul li{
+    list-style: none;
+    padding-top: 20px ;
+    
+}
+.footer-ancor ul li  a{
+    text-decoration: none;
+    color: white;
+    
+   
+}
+
+
     
 /* responsive for mobile device */
 @media screen and (max-width : 576px ) {
   .navigat, #school ,#contact{
     display: none;
  
- 
+
+  }
+
+  nav {
+    border-bottom: 1px solid orange;
+   padding-bottom: 10px ;
   }
 .enroll-section{
    flex-direction: column-reverse;
@@ -390,6 +439,19 @@ nav img{
  .view{
    margin: 20px auto;
    padding-left: 100px ;
+ }
+ .footer{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px ;
+    text-decoration: left;
+ }
+ .footer-box{
+    max-width: none;
+    max-height: none;
+ }
+ .footer-ancor{
+    margin-left: 0px ;
+    padding-left: 0px ;
  }
 }
 
