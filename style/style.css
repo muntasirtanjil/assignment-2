@@ -360,9 +360,7 @@ nav img{
     font-size: 20px ;
     max-width: 400px ;
 }
-.footer-ancor{
-    text-align: left;
-}
+
 .footer-ancor ul li{
     list-style: none;
     padding-top: 20px ;
@@ -461,13 +459,13 @@ nav img{
  .footer{
     grid-template-columns: repeat(1, 1fr);
     padding: 20px ;
-    text-decoration: left;
+    
  }
  .footer-box{
     max-width: none;
     max-height: none;
  }
- .footer-ancor{
+ .footer-ancor li {
     margin-left: 0px ;
     padding-left: 0px ;
  }
